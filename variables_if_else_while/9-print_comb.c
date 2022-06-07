@@ -16,8 +16,10 @@ int main(void)
 	{
 	putchar(r);
 	if (r < 57)
+	{
 	putchar(',');
 	putchar(' ');
+	}
 	}
 	putchar('\n');
 	return (0);
