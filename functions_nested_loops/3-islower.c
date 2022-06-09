@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* print_alphabet - print_alphabet will print the whole alphabet
-*
+* _islower - identifies lower case letters
+* c - variable which will change according the letter
 * Return: Always 0 (Success)
 */
 
