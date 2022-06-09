@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * _islower - identifies lower case letters
-* c - variable which will change according the letter
+* @c - variable which will change according the letter
 * Return: Always 0 (Success)
 */
 
