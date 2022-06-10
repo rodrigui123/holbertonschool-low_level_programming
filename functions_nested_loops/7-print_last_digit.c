@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * print_last_digit - prints last digit of d
  * @d : number that will change
@@ -6,14 +9,7 @@
  */
 int print_last_digit(int d)
 {
-	int lastDigit = d % 10;
-
-	if (d < 0)
-	{
-	lastDigit = -lastDigit;
-	_putchar(lastDigit);
-	}
-	else
-	_putchar(lastDigit);
-	return (lastDigit);
+	d = abs(d % 10);
+	_putchar(d + '0');
+	return (d);
 }
