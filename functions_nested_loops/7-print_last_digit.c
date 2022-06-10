@@ -12,7 +12,6 @@ int print_last_digit(int d)
 	{
 	lastDigit = -lastDigit;
 	_putchar(lastDigit);
-	return (lastDigit);
 	}
 	else
 	_putchar(lastDigit);
