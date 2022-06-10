@@ -5,6 +5,7 @@
  * @d : number that will change
  * Return: Always 0.
  */
+
 int print_last_digit(int d)
 {
 	int lastDigit = d % 10;
