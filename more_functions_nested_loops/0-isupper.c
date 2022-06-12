@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _isupper - checks uppercase 
+ * _isupper - checks uppercase
  * @c : the numbers
  * Return: Always 0.
  */
