@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * _isdigit - the digit that may vary
  * Return: Always 0.
  */
 int _isdigit(int c)
