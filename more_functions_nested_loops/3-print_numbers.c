@@ -2,7 +2,6 @@
 
 /**
  * print_numbers - prints the numbers asked
- * @n : variable
  * Return: Always 0.
  */
 void print_numbers(void)
