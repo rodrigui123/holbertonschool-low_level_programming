@@ -7,10 +7,10 @@
  */
 void _puts(char *str)
 {
-	char *str = "I do not fear computers. I fear the lack of them - Isaac Asimov \n";
-
-while (*str != '\0')
-{
+	while (*str != '\0')
+	{
 	_putchar(*str);
 	str++;
+	}
+	_putchar('10');
 }
