@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - check the code 
- *
+ * reset_to_98 - changes the value to 98
+ * @n : variable which value will change
  * Return: Always 0.
  */
 void reset_to_98(int *n)
