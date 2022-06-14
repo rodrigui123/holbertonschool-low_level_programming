@@ -3,7 +3,6 @@
 
 /**
  * swap_int - swap values
- * @r : variable to store the value
  * @a : variable
  * @b : variable
  * Return: Always 0.
