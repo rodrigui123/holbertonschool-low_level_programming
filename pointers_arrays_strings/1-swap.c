@@ -2,8 +2,10 @@
 #include <stdio.h>
 
 /**
- * swap_int - swap values of a b
- * @r : variable to store the value of a 
+ * swap_int - swap values from variables
+ * @r : variable to store the value
+ * @a : variable
+ * @b : variable 
  * Return: Always 0.
  */
 void swap_int(int *a, int *b)
