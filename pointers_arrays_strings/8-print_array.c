@@ -14,9 +14,10 @@ void print_array(int *a, int n)
 	{
 		if (len == n - 1)
 		{
-			printf("%d\n", a[len]);
+			printf("%d", a[len]);
 		}
 		else
 			printf("%d, ", a[len]);
 	}
+	printf("\n");
 }
