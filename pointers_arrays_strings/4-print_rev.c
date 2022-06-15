@@ -13,7 +13,7 @@ void print_rev(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 	}
-	x = (i - 1)
+	x = (i - 1);
 	for (; x >= 0; x--)
 	{
 		_putchar(s[x]);
