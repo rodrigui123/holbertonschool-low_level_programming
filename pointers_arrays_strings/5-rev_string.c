@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * rev_string - print the string reverse
+ * @s : variable
  * Return: Always 0.
  */
 void rev_string(char *s)
