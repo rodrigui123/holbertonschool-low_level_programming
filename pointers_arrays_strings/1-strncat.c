@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
  * _strncat - concatenates two strings
@@ -10,22 +11,17 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int lendest;
-	int lensrc;
+	int destlen = strlen[dest];
+	int i = 0;
 
-	if (dest[0] == 0 || src[0] == 0)
+
+	if (n == 0)
 		return (dest);
-
-	else if (n > 0)
-	{	
-		for (lendest = 0; dest[lendest]; lendest++)
-		{
-		}
-		for (lensrc = 0; src[lensrc]; lensrc++, lendest++)
-		{	
-			src[lensrc] = dest[lendest];
-		}
-	dest[lendest] = '\0';
+	while (src[i])
+	{
+		dest[destlen + i] = src[i];
+		i++;
 	}
+	dest[lendest] = '\0';
 	return (dest);
 }
