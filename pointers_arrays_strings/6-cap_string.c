@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * cap_string - cap the first character of string
+ * @s : string
  * Return: Always 0.
  */
 char *cap_string(char *s)
@@ -18,7 +18,13 @@ char *cap_string(char *s)
 		}
 		else if (s[i] >= 97 && s[i] <= 122)
 		{
-			if (s[i - 1] == ' ' || s[i - 1] == '\t' || s[i - 1] == '\n' || s[i - 1] == ',' || s[i -1] == ';' || s[i - 1] == '.' || s[i - 1] == '!' || s[i -1] == '?' || s[i - 1] == '"' || s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' || s[i - 1] == '}')
+			if (s[i - 1] == ' ' || s[i - 1] == '\t' ||
+				s[i - 1] == '\n' || s[i - 1] == ',' ||
+				s[i - 1] == ';' || s[i - 1] == '.' ||
+				s[i - 1] == '!' || s[i - 1] == '?' ||
+				s[i - 1] == '"' || s[i - 1] == '(' ||
+				s[i - 1] == ')' || s[i - 1] == '{' ||
+				s[i - 1] == '}')
 			{
 
 				s[i] = s[i] - 32;
@@ -26,4 +32,4 @@ char *cap_string(char *s)
 		}
 	}
 	return (s);
-} 
+}
