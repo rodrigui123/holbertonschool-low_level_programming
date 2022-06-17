@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * strcat - appends src at the end of dest
+ * _strcat - appends src at the end of dest
  * @dest : destination string
  * @src : source string
  * Return: Always 0.
