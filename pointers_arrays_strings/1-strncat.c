@@ -11,7 +11,7 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int destlen = strlen[dest];
+	int destlen = strlen(dest);
 	int i = 0;
 
 
@@ -22,6 +22,6 @@ char *_strncat(char *dest, char *src, int n)
 		dest[destlen + i] = src[i];
 		i++;
 	}
-	dest[lendest] = '\0';
+	dest[destlen] = '\0';
 	return (dest);
 }
