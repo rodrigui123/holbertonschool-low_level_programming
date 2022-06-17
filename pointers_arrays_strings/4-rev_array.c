@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * reverse_array - prints the string in reverse
  * @a: an array of integers
  * @n: the number of elements to swap
  *
@@ -21,4 +21,4 @@ void reverse_array(int *a, int n)
 		a[i] = a[j];
 		a[j] = temp;
 	}
-}	 
+} 
