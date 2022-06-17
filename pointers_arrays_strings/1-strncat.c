@@ -13,7 +13,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	for (lensrc = 0; lensrc < n && src [lensrc] != '\0'; lensrc++)
 	{
-		dest[lendest] = src[lensrc];
+		src[lensrc] = dest[lendest];
 	}
 	dest[lendest + lensrc] = '\0';
 	return (dest);
