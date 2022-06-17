@@ -13,12 +13,18 @@ char *_strncat(char *dest, char *src, int n)
 	int lendest;
 	int lensrc;
 
-	for (lendest = 0; dest[lendest]; lendest++)
-	{
-	}
-	for (lensrc = 0; lensrc < n && src[lensrc] != '\0'; lensrc++)
-	{
-		dest[lendest] = src[lensrc];
+	if (dest[0] == 0 || src[0] == 0)
+		return (dest);
+
+	else if (n > 0)
+	{	
+		for (lendest = 0; dest[lendest]; lendest++)
+		{
+		}
+		for (lensrc = 0; src[lensrc]; lensrc++, lendest++)
+		{	
+			dest[lendest] = src[lensrc];
+		}
 	}
 	dest[lendest + lensrc] = '\0';
 	return (dest);
