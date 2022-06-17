@@ -23,7 +23,7 @@ char *_strncat(char *dest, char *src, int n)
 		}
 		for (lensrc = 0; src[lensrc]; lensrc++, lendest++)
 		{	
-			dest[lendest] = src[lensrc];
+			src[lensrc] = dest[lendest];
 		}
 	dest[lendest] = '\0';
 	}
