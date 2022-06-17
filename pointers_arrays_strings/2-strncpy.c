@@ -2,8 +2,10 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * _strncpy - copies a string
+ * @dest : dest string
+ * @src : source string
+ * @n : limit number of characters in string
  * Return: Always 0.
  */
 char *_strncpy(char *dest, char *src, int n)
