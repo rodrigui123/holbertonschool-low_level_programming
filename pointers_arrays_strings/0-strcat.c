@@ -17,7 +17,7 @@ char *_strcat(char *dest, char *src)
 	}
 	for (lensrc = 0; src[lensrc]; lensrc++)
 	{
-		src[lensrc] = dest[lendest];
+		dest[lendest] = src[lensrc];
 		lendest++;
 	}
 	src[lensrc] = 0;
