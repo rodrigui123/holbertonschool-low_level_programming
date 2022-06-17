@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * string_toupper - change lowercase to uppercase
+ * @s : string
  * Return: Always 0.
  */
 char *string_toupper(char *s)
@@ -19,4 +19,4 @@ char *string_toupper(char *s)
 	i++;
 	}
 	return (s);
-}	
+}
