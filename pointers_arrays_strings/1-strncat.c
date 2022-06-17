@@ -2,8 +2,10 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * _strncat - concatenates two strings
+ * @dest : string destination
+ * @src : source string
+ * @n : last char from string
  * Return: Always 0.
  */
 char *_strncat(char *dest, char *src, int n)
