@@ -10,19 +10,20 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int i = 0;
 	int j = 0;
-	int charfound = 0;
+	int charf = 0;
 
 	while (s[i])
 	{
 		j = 0;
-		charfound = 0;
+		charf = 0;
 		while (accept[j])
 		{
 			if (s[i] == accept[j])
-				charfound = 1;
+				charf = 1;
 		}
-		if (charfound == 0)
+		if (charf == 0)
 			return (i);
 	}
 		i++;
+	return (s[i]);
 }
