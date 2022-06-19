@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
- *
- * Return: Nothing.
+ * _memset - function that fills memory with a constant byte
+ * @s : string
+ * @b : content of i position
+ * @n : the last position of the string
+ * Return: string s.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
