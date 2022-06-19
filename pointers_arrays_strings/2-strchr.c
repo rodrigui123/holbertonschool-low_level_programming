@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * _strchr - find the first char appereance 
+ * @s : string
+ * @c : the character
  * Return: Always 0.
  */
 char *_strchr(char *s, char c)
