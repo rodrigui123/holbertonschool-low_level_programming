@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strchr - find the first char appereance 
+ * _strchr - find the first char appereance
  * @s : string
  * @c : the character
  * Return: Always 0.
