@@ -13,13 +13,13 @@ int squareroot(int i, int n)
 
 	square = i * i;
 	if (square <= n)
-		{
-			if (square == n)
-				return (i);
+	{
+		if (square == n)
+			return (i);
 
-			else
-				return (squareroot(n, i + 1));
-		}
+		else
+			return (squareroot(i + 1, n));
+	}
 	return (-1);
 }
 
