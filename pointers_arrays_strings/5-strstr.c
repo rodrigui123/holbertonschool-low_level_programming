@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _strstr - 
  *
  * Return: Always 0.
  */
@@ -15,11 +15,11 @@ char *_strstr(char *haystack, char *needle)
 	{
 		for (j = 0; needle[j]; j++)
 		{
-			if (haystack[i] == needle[j])
-				return (haystack[i]);
-			if (haystack[i] != needle[j])
-				return (NULL);
+			if (needle[j] != haystack[i + j])
+				break;
 		}
+		if (haystack[i] == '\0')
+			return (&haystack[i]);
 	}
 	return (NULL);
 }
