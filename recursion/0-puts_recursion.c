@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * main - check the code
@@ -8,7 +9,7 @@
 void _puts_recursion(char *s)
 {
 	if (s[0] == '\0')
-		return (NULL);	
+		_putchar ('\n');
 
 	if (*s != '\0')
 	{
