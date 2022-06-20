@@ -18,7 +18,7 @@ int squareroot (int i, int n)
 				return (i);
 
 			else
-				return (squareroot(n, i + 1);
+				return (squareroot(n, i + 1));
 		}
 	return (-1);
 }
@@ -32,5 +32,5 @@ int squareroot (int i, int n)
 */
 int _sqrt_recursion(int n)
 {
-	return (squareroot(1, n);
+	return (squareroot(1, n));
 }
