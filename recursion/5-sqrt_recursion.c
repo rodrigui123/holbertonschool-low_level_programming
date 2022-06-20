@@ -7,12 +7,12 @@
  * @n : the number to do the squareroot
  * Return: Always 0.
  */
-int squareroot (int i, int n)
+int squareroot(int i, int n)
 {
 	int square = 0;
 
 	square = i * i;
-	if (i <= n)
+	if (square <= n)
 		{
 			if (square == n)
 				return (i);
@@ -24,7 +24,6 @@ int squareroot (int i, int n)
 }
 
 #include "main.h"
-  
 /**
  * _sqrt_recursion - returns the natural square root of a number
  * @n : base number to the squareroot
