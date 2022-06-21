@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
 * main -  entry point
-* @argc : 
+* @argc : int
 * @argv : an array of size argc
 * Return: 0.
 */
@@ -12,10 +12,14 @@ int main(int argc, char *argv[])
 	{
 		int a = atoi(argv[1]);
 		int b = atoi(argv[2]);
+		
 		printf("%d\n", (a * b));
 	}
 
 	if (argc != 3)
+	{
 		printf("Error\n");
-	return (1);
+		return (1);
+	}
+	return (0);
 }
