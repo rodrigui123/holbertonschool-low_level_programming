@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
-* main -  entry poiny
-* @argc : the number command line arguments
+* main -  entry point
+* @argc : not used
 * @argv : an array of size argc
 * Return: 0.
 */
-int main(int argc, __attribute__((unused)) char *argv[])
+int main(__attribute__((unused)) int argc, char *argv[])
 {
 	int i;
 
