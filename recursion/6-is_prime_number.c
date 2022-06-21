@@ -14,7 +14,10 @@ int prim(int n, int i)
 	if (n % i == 0)
 		return (0);
 	prim(n, i + 1);
+	return(0);
 }
+
+
 
 #include "main.h"
 #include <stdio.h>
