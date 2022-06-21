@@ -9,7 +9,7 @@
  */
 int prim(int n, int i)
 {
-	if (i <= 1)
+	if (n <= 1)
 		return (0);
 	if (i == n)
 		return (1);
