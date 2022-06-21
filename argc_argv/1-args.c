@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 * main -  entry poiny
-* @argc : the number command line arguments  
+* @argc : the number command line arguments 
 * @argv : an array of size argc
 * Return: 0.
 */
