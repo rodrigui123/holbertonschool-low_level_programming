@@ -3,8 +3,11 @@
 #include <stdlib.h>
 
 /**
- * main - check the code
- *
+ * str_concat - function that concatenates two strings
+ * @size1 : size of string s1
+ * @size2 : size of string s2
+ * @s1 : array n1
+ * @s2 : array n2
  * Return: Always 0.
  */
 char *str_concat(char *s1, char *s2)
@@ -14,9 +17,9 @@ char *str_concat(char *s1, char *s2)
 	int i, x;
 	char *arr;
 
-	for (i = 0; i < size1; i++)
+	for (size1 = 0; s1[size1] != '\0'; size1++)
 	{}
-	for (x = 0; x < size2; x++)
+	for (size2 = 0; s2[size2]; size2++)
 	{}
 	arr = malloc((size1 + size2) + 1);
 	i = 0;
