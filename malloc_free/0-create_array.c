@@ -3,11 +3,9 @@
 #include <stdlib.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
- *
- * Return: Nothing.
+ * create_array - function that creates an array of chars
+ * @c : char that has to be in every position of the array
+ * Return: the inicial position of the array
  */
 char *create_array(unsigned int size, char c)
 {
