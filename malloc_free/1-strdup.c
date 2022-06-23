@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * _strdup - function that returns a pointer to a newly allocated space in memory
- *
- * Return: Always 0.
+ * _strdup - returns a pointer to a newly allocated space in memory
+ * @str : string
+ * Return: pointer to duplicated string.
  */
 char *_strdup(char *str)
 {
@@ -17,11 +17,11 @@ char *_strdup(char *str)
 	for (len = 0; str[len]; len++)
 	{
 	}
-	ar = malloc(len * sizeof(char));
+	ar = malloc(len * sizeof(char) + 1);
 	if (ar == NULL)
 		return (NULL);
-	for ( i = 0; i < len; i++)
-	{	
+	for (i = 0; i < len; i++)
+	{
 		ar[i] = str[i];
 	}
 	ar[i] = '\0';
