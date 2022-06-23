@@ -4,8 +4,6 @@
 
 /**
  * str_concat - function that concatenates two strings
- * @size1 : size of string s1
- * @size2 : size of string s2
  * @s1 : array n1
  * @s2 : array n2
  * Return: Always 0.
@@ -17,9 +15,9 @@ char *str_concat(char *s1, char *s2)
 	int i, x;
 	char *arr;
 
-	for (size1 = 0; s1[size1] != '\0'; size1++)
+	for (size1 = 0; s1 && s1[size1] != '\0'; size1++)
 	{}
-	for (size2 = 0; s2[size2]; size2++)
+	for (size2 = 0; s2 && s2[size2]; size2++)
 	{}
 	arr = malloc((size1 + size2) + 1);
 	i = 0;
