@@ -24,10 +24,10 @@ int **alloc_grid(int width, int height)
 		{
 			for (ar[i] = 0; ar[i]; i--)
 			{
-				free(ar[i]);
 			}
-		free(ar);
-		return (NULL);
+				free(ar[i]);
+				free(ar);
+				return (NULL);
 			for (j = 0; j < width; j++)
 			{
 				ar[i][j] = 0;
