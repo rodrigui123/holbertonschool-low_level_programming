@@ -24,14 +24,14 @@ int **alloc_grid(int width, int height)
 		{
 			for (ar[i] = 0; ar[i]; i--)
 			{
-				free(ar[i];
+				free(ar[i]);
 				free(ar);
 			return (NULL);
 			}
 		}
 		for (j = 0; j < width; j++)
 		{
-			a[i][j] = 0;	
+			ar[i][j] = 0;	
 		}
 	}
 	ar = '\0';
