@@ -35,6 +35,6 @@ int **alloc_grid(int width, int height)
 			ar[i][j] = 0;	
 		}
 	}
-	ar[i] = '\0';
-	return (ar);
+	ar[i] = NULL;
+	return (ar[i]);
 }
