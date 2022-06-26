@@ -24,7 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		size1 += strlen(s2);
 	else if (n < strlen(s2))
 		size1 += n;
-	arr = malloc(size1 * sizeof(char) + 1);
+	arr = malloc(size1 * sizeof(char) + 6);
 	if (arr == NULL)
 		return (NULL);
 	if (s1 != NULL || strlen(s1) > 0)
@@ -40,15 +40,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		if (n < strlen(s2))
 		{
 			for (x = 0; x < n; x++, i++)
-			{
 				arr[i] = s2[x];
-			}
 		}
 		else if (n >= strlen(s2))
-		{
 			for (x = 0; s2[x]; x++, i++)
 				arr[i] = s2[x];
-		}
 	}
 	arr[i] = '\0';
 	return (arr);
