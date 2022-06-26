@@ -10,8 +10,8 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	char *ar;
+	void *ar;
 
 	ar = malloc(b * sizeof(char));
-	return (0);
+	return (ar);
 }
