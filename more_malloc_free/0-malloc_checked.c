@@ -13,5 +13,7 @@ void *malloc_checked(unsigned int b)
 	void *ar;
 
 	ar = malloc(b * sizeof(char));
+	if (ar == NULL)
+		return (98);
 	return (ar);
 }
