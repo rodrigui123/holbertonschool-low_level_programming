@@ -20,7 +20,7 @@ int *array_range(int min, int max)
 	arr = malloc(Lenar * sizeof(int));
 	if (arr == NULL)
 		return (NULL);
-	for (i = 0; min <= max; min++);
+	for (i = 0; min <= max; i++,  min++);
 		arr[i] = min;
 	return (arr);
 }
