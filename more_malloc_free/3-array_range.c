@@ -16,11 +16,11 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-	Lenar = (max - min) + 1;
+	Lenar = max - min + 1;
 	arr = malloc(Lenar * sizeof(int));
 	if (arr == NULL)
 		return (NULL);
-	for (i = 0; Lenar <= max; i++);
+	for (i = 0; min <= max; i++);
 		arr[i] = min;
 	return (i);
 }
