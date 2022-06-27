@@ -4,11 +4,10 @@
 #include <string.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
- *
- * Return: Nothing.
+ * _calloc - function that allocates memory for an array
+ * @nmemb : number of elements in the array
+ * @size: bytes per elements
+ * Return: void pointer to the memory location.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
