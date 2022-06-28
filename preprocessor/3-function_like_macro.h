@@ -1,3 +1,3 @@
 #ifndef ABS
-#define ABS(x) ((x) < (0) ? (x * - 1) : (x))
+#define ABS(x) ((1024 -2048) < (0) ? (1024 - 2048 * - 1) : (1024 - 2048))
 #endif
