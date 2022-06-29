@@ -7,7 +7,7 @@
  * new_dog - create a new dog struct
  * @name : component of new dog structure
  * @age : component of new dog structure
- * @owner : component of new dog structure 
+ * @owner : component of new dog structure
  * Return: Always 0.
  */
 dog_t *new_dog(char *name, float age, char *owner)
@@ -33,8 +33,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	owner = malloc(leno + 1);
 	if (tobias->owner == NULL)
 	{
-		free(tobias->name);
 		free(tobias->owner);
+		free(tobias->name);
 		free(tobias);
 		return (NULL);
 	}
@@ -46,4 +46,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 	tobias->owner = '\0';
 	tobias->age = age;
 	return (tobias);
-}	
+}
