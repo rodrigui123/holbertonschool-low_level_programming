@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
+#include <string.h>
 
 /**
  * new_dog - create a new dog struct
