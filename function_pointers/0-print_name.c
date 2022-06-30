@@ -1,7 +1,8 @@
-#ifndef
-#define
+#ifndef function_pointers
+#define function_pointers
 #include <stdio.h>
 #include "function_pointers.h"
+#endif
 
 /**
  * print_name - function that prints a name
@@ -14,4 +15,3 @@ void print_name(char *name, void (*f)(char *))
 	if (f)
 		(*f)(name);
 }
-#endif
