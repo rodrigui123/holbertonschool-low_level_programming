@@ -2,7 +2,9 @@
 #include <stdio.h>
 #include "3-calc.h"
 #include <stdlib.h>
-
+/**
+* main - function
+**/
 int main(int argc, char *argv[])
 {
 	int (*r)(int, int);
