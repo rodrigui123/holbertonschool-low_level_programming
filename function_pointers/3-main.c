@@ -11,8 +11,8 @@
 **/
 int main(int argc, char *argv[])
 {
-	int (*r)(int, int);
 	int j, p;
+	int (*r)(int, int);
 
 	j = atoi(argv[1]);
 	p = atoi(argv[3]);
