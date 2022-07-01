@@ -3,7 +3,7 @@
 #include "3-calc.h"
 #include <stdlib.h>
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int (*r)(int, int);
 	int j, p;
@@ -22,7 +22,6 @@ int main (int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	else
-		printf("%d\n", r(j, p));
+	printf("%d\n", r(j, p));
 	return (0);
 }

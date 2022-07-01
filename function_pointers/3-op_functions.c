@@ -9,16 +9,16 @@
 **/
 int op_add(int a, int b)
 {
-	return (a+b);
+	return (a + b);
 }
 /**
-* op_sub - sub function 
+* op_sub - sub function
 * @a : variable
 * @b : variable
 **/
 int op_sub(int a, int b)
 {
-	return (a-b);
+	return (a - b);
 }
 /**
 * op_mul - function that multiplies
@@ -27,7 +27,7 @@ int op_sub(int a, int b)
 **/
 int op_mul(int a, int b)
 {
-	return (a*b);
+	return (a * b);
 }
 /**
 * op_div - divide function
@@ -41,7 +41,7 @@ int op_div(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
-	return (a/b);
+	return (a / b);
 }
 /**
 * op_mod - mod function
@@ -55,5 +55,5 @@ int op_mod(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
-	return (a%b);
+	return (a % b);
 }
