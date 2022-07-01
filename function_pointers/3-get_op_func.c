@@ -2,6 +2,8 @@
 #include "3-calc.h"
 /**
 * get_op_func - chooses the function according to the operator
+* @s : pointer to string
+* Return: NULL.
 **/
 int (*get_op_func(char *s))(int, int)
 {

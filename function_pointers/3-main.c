@@ -4,6 +4,9 @@
 #include <stdlib.h>
 /**
 * main - function
+* @argc : characters of argument by user
+* @argv : position inside the argument
+* Return: 0.
 **/
 int main(int argc, char *argv[])
 {
@@ -19,7 +22,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (r == NULL)
+	if (r == NULL || strlen(argv[2]) != 1 )
 	{
 		printf("Error\n");
 		exit(99);
