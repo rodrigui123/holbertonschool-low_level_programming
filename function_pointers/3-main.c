@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include "3-calc.h"
 #include <stdlib.h>
+#include <string.h>
 /**
 * main - function
 * @argc : characters of argument by user
