@@ -1,8 +1,9 @@
 #include "variadic_functions.h"
 
 /**
- * main - check the code
- *
+ * print_numbers - function that prints numbers
+ * @separator : separator between numbers
+ * @n : number of integers passed to print
  * Return: Always 0.
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -10,7 +11,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_list b;
 	unsigned int i;
-	
+
 	va_start(b, n);
 	if (n != 0)
 	{
@@ -20,7 +21,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			{
 				printf("%s", separator);
 			}
-			printf("%d", va_arg(b, int));}
+			printf("%d", va_arg(b, int));
+		}
 	}
 	va_end(b);
 	printf("\n");
