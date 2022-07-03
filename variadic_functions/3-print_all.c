@@ -15,7 +15,7 @@ void print_all(const char * const format, ...)
 	{
 		while (i != '\0')
 		{
-			i++
+			i++;
 			switch(i)
 			{
 				case 'c':
