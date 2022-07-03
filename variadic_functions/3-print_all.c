@@ -16,10 +16,10 @@ void print_all(const char * const format, ...)
 	{
 		while (format[i])
 		{
+			if (i >= 1)
+ 				printf(", ");
 			switch (format[i])
 			{
-				if (i >= 1)
-					printf("%s", ", ");
 				case 'c':
 					printf("%c", va_arg(b, int));
 					break;
