@@ -1,8 +1,9 @@
 #include "variadic_functions.h"
 
 /**
- * main - check the code
- *
+ * print_strings - function that prints strings
+ * @separator : separator between numbers
+ * @n : number of integers passed to print
  * Return: Always 0.
  */
 void print_strings(const char *separator, const unsigned int n, ...)
