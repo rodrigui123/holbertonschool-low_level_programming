@@ -29,8 +29,8 @@ void print_all(const char * const format, ...)
 					printf("%f", va_arg(b, double));
 					break;
 				case 's':
-					j = (va_arg(b, char *));
-					(j == NULL ? printf("(nil)") : printf("%s", j);
+				j = (va_arg(b, char *));
+					(j == NULL ? printf("(nil)") : printf("%s", j));
 					break;
 			}
 		}
