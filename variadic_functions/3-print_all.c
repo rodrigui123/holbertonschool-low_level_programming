@@ -18,6 +18,8 @@ void print_all(const char * const format, ...)
 		{
 			switch (format[i])
 			{
+			if (i >= 1)
+				printf("%s", ", ");
 				case 'c':
 					printf("%c", va_arg(b, int));
 					break;
@@ -31,8 +33,6 @@ void print_all(const char * const format, ...)
 					j = (va_arg(b, char *));
 					(j == NULL ? printf("(nil)") : printf("%s", j));
 					break;
-				if (i >= 1)
-					printf("%s", ", ");
 			}
 			i++;
 		}
