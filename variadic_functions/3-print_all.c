@@ -1,8 +1,8 @@
 #include "variadic_functions.h"
 
 /**
- * main - check the code
- *
+ * print_all - function that prints anything
+ * @format : the string which will contain everything
  * Return: Always 0.
  */
 void print_all(const char * const format, ...)
@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 		while (i != '\0')
 		{
 			i++;
-			switch(i)
+			switch (i)
 			{
 				case 'c':
 					printf("%c", va_arg(b, int));
@@ -37,4 +37,4 @@ void print_all(const char * const format, ...)
 	}
 	va_end(b);
 	printf("\n");
-} 
+}
