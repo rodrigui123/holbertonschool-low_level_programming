@@ -8,7 +8,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list b;
-	int i = 0;
+	int j, i = 0;
 
 	va_start(b, format);
 	if (format != 0)
@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 					printf("%f", va_arg(b, double));
 					break;
 				case 's':
-					j = ("%s", va_arg(b, char *));
+					j = (va_arg(b, char *));
 					if (j == NULL)
 						printf("(nil)");
 						else
