@@ -12,7 +12,7 @@ void print_all(const char * const format, ...)
 	char *j;
 
 	va_start(b, format);
-	if (format != NULL)
+	if (format != 0)
 	{
 		while (format[i])
 		{
@@ -32,6 +32,8 @@ void print_all(const char * const format, ...)
 					(j == NULL ? printf("(nil)") : printf("%s", j));
 					break;
 			}
+			if (i >= 1 && separator != NULL)
+				printf("%s", ", ");
 			i++;
 		}
 	}
