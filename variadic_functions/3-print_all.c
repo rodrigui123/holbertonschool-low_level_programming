@@ -13,12 +13,10 @@ void print_all(const char * const format, ...)
 
 	va_start(b, format);
 	if (format != 0)
+	lenf = strlen((format) - 1);
 	{
 		while (format[i])
 		{
-			if (i >= 1 && (format[i] == 'c' ||
-			format[i]  == 'i' || format[i] == 'f' || format[i] == 's'))
-				printf(", ");
 			switch (format[i])
 			{
 				case 'c':
@@ -35,6 +33,10 @@ void print_all(const char * const format, ...)
 					(j == NULL ? printf("(nil)") : printf("%s", j));
 					break;
 			}
+			if (i < lenf && (format[i] == 'c' ||
+			format[i]  == 'i' || format[i] == 'f' || format[i] == 's'))
+				printf(", ");
+
 			i++;
 		}
 	}
