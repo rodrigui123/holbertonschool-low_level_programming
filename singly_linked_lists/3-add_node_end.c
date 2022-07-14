@@ -21,7 +21,7 @@ list_t *add_node_end(list_t **head, const char *str)
 			{
 				lastdigit = lastdigit->next;
 			}
-		lastdigit->next = newnode;
+			lastdigit->next = newnode;
 	}
 	newnode->str = strdup(str);
 	newnode->len = strlen(str);
