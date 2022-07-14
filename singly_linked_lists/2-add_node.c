@@ -2,22 +2,22 @@
 
 /**
  * add_node - add a node at the beginning of a list
- * @newnode : the new node
+ * @newnod : the new node
  * @head : pointer of a pointer to the array
  * @str : string
  * Return: newnode
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *newnode;
+	list_t *newnod;
 
-	newnode = malloc(sizeof(list_t));
+	newnod = malloc(sizeof(list_t));
 	if (newnode == NULL)
 		return (NULL);
-	newnode->str = strdup(str);
-	newnode->len = strlen(str);
-	newnode->next = *head;
-	*head = newnode;
+	newnod->str = strdup(str);
+	newnod->len = strlen(str);
+	newnod->next = *head;
+	*head = newnod;
 
-	return (newnode);
+	return (newnod);
 }
