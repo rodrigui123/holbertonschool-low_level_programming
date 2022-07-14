@@ -9,7 +9,7 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *newnode;
-	list_t *lastdigit;
+	list_t *lastdigit = *head;
 
 	newnode = malloc(sizeof(list_t));
 	if (newnode == NULL)
@@ -22,7 +22,9 @@ list_t *add_node_end(list_t **head, const char *str)
 		if (*head == NULL)
 			*head = newnode;
 		while (lastdigit->next != NULL)
+		{
 			lastdigit = lastdigit->next;
+		}
 		lastdigit->next = newnode;
 	}
 	return (newnode);
