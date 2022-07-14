@@ -1,4 +1,4 @@
-#include "lists.h" 
+#include "lists.h"
 
 /**
  * add_node_end - function that adds node at the end of list
@@ -17,7 +17,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	newnode->str = strdup(str);
 	newnode->len = strlen(str);
 	newnode->next = NULL;
-	if (head == NULL)
+	if (*head == NULL)
 	{
 		*head = newnode;
 		return(newnode);
@@ -27,4 +27,6 @@ list_t *add_node_end(list_t **head, const char *str)
 		lastdigit = lastdigit->next;
 	}
 	lastdigit->next = newnode;
+	
+	return (newnode);
 }
