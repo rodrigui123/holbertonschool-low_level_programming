@@ -1,23 +1,23 @@
 #include "lists.h"
 
 /**
- * add_node - add a node at the beginning of a list
- * @newnod : the new node
+ * add_node - the node at the beginning of a list
+ * @newnode : the new node
  * @head : pointer of a pointer to the array
  * @str : string
  * Return: newnode
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *newnod;
+	list_t *newnode;
 
-	newnod = malloc(sizeof(list_t));
-	if (newnod == NULL)
+	newnode = malloc(sizeof(list_t));
+	if (newnode == NULL)
 		return (NULL);
-	newnod->str = strdup(str);
-	newnod->len = strlen(str);
-	newnod->next = *head;
-	*head = newnod;
+	newnode->str = strdup(str);
+	newnode->len = strlen(str);
+	newnode->next = *head;
+	*head = newnode;
 
-	return (newnod);
+	return (newnode);
 }
