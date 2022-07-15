@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * main - check the code
- *
+ * pop_listint - function that deletes the head node of a list
+ * @head : pointer of the pointer to the first position of list
  * Return: Always 0.
  */
 int pop_listint(listint_t **head)
