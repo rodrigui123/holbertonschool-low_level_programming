@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * main - check the code
- *
+ * free_list - function that frees a list
+ * @head : pointer to the first position of data
  * Return: Always 0.
  */
 void free_list(list_t *head)
