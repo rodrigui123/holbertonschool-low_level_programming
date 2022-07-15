@@ -13,7 +13,7 @@ size_t print_listint(const listint_t *h)
 	{
 		if (h != NULL)
 		
-			printf("[%d] %s\n", h->len, h->str);
+			printf("%d\n", h);
 		count++;
 		h = h->next;
 	}
