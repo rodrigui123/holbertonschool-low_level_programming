@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * clear_bit - sets the value of a bit to 0 at a given index
+ * @n : number
+ * @index : position of number to set bit to 0
  * Return: Always 0.
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int mask = ~ (1 << index), cp = *n;
+	unsigned long int mask = ~(1 << index), cp = *n;
 
 	if (n)
 	{
