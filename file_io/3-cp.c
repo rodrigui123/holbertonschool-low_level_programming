@@ -34,7 +34,7 @@ void copy_text(const char *from, const char *to)
 	readme = read(file_from, Count, 1024);
 	if (readme == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from), exit(98);
-	writeme = write(file_to, count, readme);
+	writeme = write(file_to, Count, readme);
 	if (writeme == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write %s\n", from), exit(99);
 	if (close(file_to) == -1)
