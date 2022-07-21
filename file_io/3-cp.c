@@ -1,9 +1,9 @@
 #include "main.h"
 /**
 * main - the function that copies text from a file to another
-* @argc : count of the array size 
+* @argc : count of the array size
 * @argv : content of array
-* return: 97 / 98 / 99
+* Return: 99 / 98 / 97
 **/
 int main(int argc, char *argv[])
 {
@@ -32,7 +32,7 @@ void copy_text(const char *from, const char *to)
 
 	file_to = open(to, O_CREAT | O_TRUNC | O_WRONLY, mode);
 	if (file_to == -1)
-		dprintf(STDERR_FILENO, "Error: Can't write %s\n", from), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", from), exit(99);
 	while (readme == 1024)
 	{
 		readme = read(file_from, Count, 1024);
@@ -40,7 +40,7 @@ void copy_text(const char *from, const char *to)
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from), exit(98);
 		writeme = write(file_to, Count, readme);
 		if (writeme == -1)
-			dprintf(STDERR_FILENO, "Error: Can't write %s\n", to), exit(99);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", to), exit(99);
 	}
 	if (close(file_to) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to), exit(100);
