@@ -32,7 +32,7 @@ void copy_text(const char *from, const char *to)
 
 	file_to = open(to, O_CREAT | O_TRUNC | O_WRONLY, mode);
 	if (file_to == -1)
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", from), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", to), exit(99);
 	while (readme == 1024)
 	{
 		readme = read(file_from, Count, 1024);
