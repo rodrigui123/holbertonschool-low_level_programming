@@ -11,15 +11,15 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 		exit(97);
 	}
-	copy_txt(argv[1], argv[2]);
+	copy_text(argv[1], argv[2]);
 	exit(0);
 }
 /**
-* copy_txt - function that copies from one file to another
+* copy_text - function that copies from one file to another
 * @from : this file
 * @to : this file
 **/
-void copy_txt(const char *from, const char *to)
+void copy_text(const char *from, const char *to)
 {
 	int file_from, file_to, readme = 1024, writeme;
 	char *Count[1024];
@@ -31,7 +31,7 @@ void copy_txt(const char *from, const char *to)
 	file_to = open(to, O_CREAT | O_TRUNC | O_WRONLY, mode);
 	if (file_to == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write %s\n", from), exit(99);
-	readme = read(file_from, count, 1024);
+	readme = read(file_from, Count, 1024);
 	if (readme == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from), exit(98);
 	writeme = write(file_to, count, readme);
