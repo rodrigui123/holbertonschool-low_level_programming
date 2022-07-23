@@ -8,7 +8,7 @@
 */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *aux, *prevnode, *nextNode, *varnode;
+	dlistint_t *aux, *prevnode, *nextnode, *varnode;
 	unsigned int i;
 
 	aux = *head;
@@ -35,7 +35,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		free(aux);
 		return (1);
 	}
-i	prevnode = aux->prev;
+	prevnode = aux->prev;
 	nextnode = aux->next;
 	prevnode->next = nextnode;
 	nextnode->prev = prevnode;
