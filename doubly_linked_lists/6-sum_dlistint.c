@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * sum_listint - func returns the sum of all the data list
+ * sum_dlistint - func returns the sum of all the data list
  * @head : pointer to first node in list
  * Return: The sum
  */
@@ -11,10 +11,10 @@ int sum_dlistint(dlistint_t *head)
 
 	if (head == NULL)
 		return (0);
-	if (head)
+	while (head)
 	{
 		sum += head->n;
 		head = head->next;
 	}
 	return (sum);
-}	
+}
