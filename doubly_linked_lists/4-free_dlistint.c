@@ -7,7 +7,7 @@
  */
 void free_dlistint(dlistint_t *head)
 {
-	listint_t *freenode;
+	dlistint_t *freenode;
 
 	if (head == NULL)
 	{
@@ -19,4 +19,4 @@ void free_dlistint(dlistint_t *head)
 		free(head);
 		head = freenode;
 	}
-}	
+}
