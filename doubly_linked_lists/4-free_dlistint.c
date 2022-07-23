@@ -1,9 +1,22 @@
 #include "lists.h"
 
 /**
- * main - check the code
- *
+ * free_dlistint - function that frees a list
+ * @head : pointer to the first position of the list
  * Return: Always EXIT_SUCCESS.
  */
 void free_dlistint(dlistint_t *head);
 {
+	listint_t *freenode;
+
+	if (head == NULL)
+	{
+		return;
+	}
+	while (head)
+	{
+		freenode = head->next;
+		free(head);
+		head = freenode;
+	}
+}	
