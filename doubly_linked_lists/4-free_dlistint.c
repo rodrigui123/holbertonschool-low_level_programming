@@ -5,7 +5,7 @@
  * @head : pointer to the first position of the list
  * Return: Always EXIT_SUCCESS.
  */
-void free_dlistint(dlistint_t *head);
+void free_dlistint(dlistint_t *head)
 {
 	listint_t *freenode;
 
