@@ -1,8 +1,8 @@
 #include "hash_tables.h"
 
 /**
- * key_index - 
- * @key: 
+ * key_index - function that gives you the index of a key
+ * @key: the key
  * @size: size of key
  * Return: position of key
  */
