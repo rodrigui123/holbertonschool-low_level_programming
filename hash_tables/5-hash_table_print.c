@@ -15,7 +15,7 @@ void hash_table_print(const hash_table_t *ht)
 	putchar('{');
 	while (index < ht->size)
 	{
-		slot = ht->array[index];
+		aux = ht->array[index];
 		while (aux)
 		{
 			if (printcount != 0)
