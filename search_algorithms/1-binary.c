@@ -1,9 +1,11 @@
 #include "search_algos.h"
 
 /**
- * main - Entry point
- *
- * Return: Always EXIT_SUCCESS
+ * binary_search - searches value in sorted array using Binary search algorithm
+ * @array: the array 
+ * @size: size of it
+ * @value: value we are looking for
+ * Return: value on success, otherwise -1
  */
 int binary_search(int *array, size_t size, int value)
 {
@@ -13,7 +15,7 @@ int binary_search(int *array, size_t size, int value)
 		return (-1);
 	for (; i < size; i++)
 	{
-		printf("Value checked array[%li] = [%d]\n", i, array[i]);
+		printf("Searching in array: %ld", i);
 		if (array[i] == value)
 		{
 			return (i);
