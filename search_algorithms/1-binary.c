@@ -2,7 +2,7 @@
 
 /**
  * binary_search - searches value in sorted array using Binary search algorithm
- * @array: the array 
+ * @array: the array
  * @size: size of it
  * @value: value we are looking for
  * Return: value on success, otherwise -1
@@ -15,7 +15,8 @@ int binary_search(int *array, size_t size, int value)
 		return (-1);
 	for (; i < size; i++)
 	{
-		printf("Searching in array: %ld", i);
+		if (i == 0)
+			printf("Searching in array: %ld", i);
 		if (array[i] == value)
 		{
 			return (i);
