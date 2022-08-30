@@ -9,7 +9,7 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t i = 0, left = 0, right = size -1, mid = 0;
+	size_t i = 0, left = 0, right = size - 1, mid = 0;
 
 	if (array == NULL || size == 0)
 		return (-1);
@@ -22,6 +22,7 @@ int binary_search(int *array, size_t size, int value)
 				putchar(',');
 			printf(" %d", array[i]);
 		}
+		putchar('\n');
 		mid = left + (right - left) / 2;
 		if (value == array[mid])
 			return (mid);
